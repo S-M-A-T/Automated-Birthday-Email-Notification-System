@@ -10,7 +10,13 @@ using System.Net.Mime;
 
 class Program
 {
-    
+    // Email service settings
+    private static readonly string smtpHost = ""; // Your SMTP host
+    private static readonly int smtpPort = 3253; // Your SMTP port
+    private static readonly string smtpUser = ""; // Your email address
+    private static readonly string smtpPassword = ""; // Your email password
+    private static readonly string connectionString = "Data Source=.;Initial Catalog=test;User Id=sa;Password=###;"; // Your SQL Server connection string
+
     // Log file location (from App.config)
     private static readonly string logFileLoc = ConfigurationManager.AppSettings["log_file_loc"];
 
